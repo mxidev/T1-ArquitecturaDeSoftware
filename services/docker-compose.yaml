@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  service1:
+    build: ./nano1
+    ports:
+      - "8001:80"
+    volumes:
+      - ./nano1:/app
+
+  service2:
+    build: ./nano2
+    ports:
+      - "8002:80"
+    volumes:
+      - ./nano2:/app
+
